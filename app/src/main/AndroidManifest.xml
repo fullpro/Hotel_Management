@@ -18,7 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BookingActivity"></activity>
+        <activity android:name=".BookingActivity" />
+        <activity android:name=".BookingDetails" />
+        <activity android:name=".CheckInDetails"></activity>
     </application>
 
 </manifest>

@@ -9,7 +9,8 @@
     xmlns:cardview="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="15dp"
-    cardview:cardCornerRadius="8dp">
+    cardview:cardCornerRadius="8dp"
+    >
 
     <LinearLayout
         android:layout_width="180dp"
@@ -27,13 +28,14 @@
             android:scaleType="centerCrop" />
 
         <TextView
-        android:id="@+id/Room_type"
-        android:textColor="#2d2d2d"
+            android:id="@+id/Room_type"
+            android:textColor="#2d2d2d"
             android:padding="4dp"
-        android:text="Room type"
-        android:textSize="22sp"
-        android:layout_width="match_parent"
-        android:layout_height="40dp" />
+            android:text="Room type"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#bebbbb"/>
 
         <TextView
             android:id="@+id/Room_desc"
@@ -42,6 +44,7 @@
             android:textColor="#2d2d2d"
             android:text="Description"
             android:maxLines="3"
+            android:background="#bebbbb"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 

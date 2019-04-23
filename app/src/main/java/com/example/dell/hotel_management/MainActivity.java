@@ -43,10 +43,23 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         fisrtRoom = new ArrayList<>();
-        fisrtRoom.add(new Room("Suit","Description Here",R.drawable.hotel_room1));
-        fisrtRoom.add(new Room("Villa","Description Here",R.drawable.hotel_room2));
-        fisrtRoom.add(new Room("Room type 3","Description Here",R.drawable.hotel_room3));
-        fisrtRoom.add(new Room("Room type 4","Description Here",R.drawable.hotel_room4));
+        fisrtRoom.add(new Room("Suit","A large window with beautiful views of the Plaza de España and María Luisa Park" +
+                " is part of the sophisticated charm of this 37 m2 room, " +
+                "along with a bathroom with a relaxing whirlpool bathtub separated from the bedroom by a sliding glass door.",R.drawable.hotel_room1));
+
+        fisrtRoom.add(new Room("Villa","Enjoy unlimited experiences in this 51 m2 room with a lounge " +
+                "and amazing windows offering beautiful views over the Plaza de España and hotel pool," +
+                " plus a bedroom with a double bed or two single beds and a full bathroom.",R.drawable.hotel_room2));
+
+        fisrtRoom.add(new Room("ECONOMY SINGLE ROOM","Spacious, bright and outward facing rooms measuring 19 m2 and totally refurbished." +
+                " The room comes with Dreamax bed (manufactured and designed exclusively by Flex for Meliá Hotels International), a modern, fully equipped bathroom finished in top quality bronze coloured ceramics and an independent entrance." +
+                " It also has a home automation system which automatically regulates the temperature of the room based on guest presence or absence from the room. They also provide an intelligent temperature management " +
+                "system that automatically adjusts the temperature depending on whether anyone is in the room.",R.drawable.hotel_room3));
+
+        fisrtRoom.add(new Room("Premium Room","Spacious, bright and outward facing rooms measuring 27 m2 and totally refurbished. The room comes with double bed or twin beds with Dreamax mattress (manufactured and designed exclusively by Flex for Meliá Hotels International)," +
+                " a modern, fully equipped bathroom finished in top quality bronze coloured ceramics and an independent hallway-dressing area. " +
+                "It also has a home automation system which automatically regulates the temperature of the room based on guest presence or absence from the room. " +
+                "All the rooms have a magnificent hallway-dressing area, as well as a room off the bathroom, which is independent of the room as it has double doors.",R.drawable.hotel_room4));
 
 
         RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerView);
@@ -136,14 +149,12 @@ public class MainActivity extends AppCompatActivity
             }else {
                 getSupportFragmentManager().popBackStackImmediate();
 
-
             }
-           //super.onBackPressed();
+
+               //super.onBackPressed();
 
         }
     }
-
-
 
 
     @SuppressWarnings("StatementWithEmptyBody")

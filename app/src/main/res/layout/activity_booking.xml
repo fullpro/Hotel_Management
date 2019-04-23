@@ -4,12 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2d2d2d"
+    android:background="@drawable/background"
     tools:context=".BookingActivity">
 
-    <android.support.v4.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,6 +22,8 @@
                 android:layout_width="250dp"
                 android:layout_height="250dp"
                 android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#4087ca"
                 android:scaleType="centerCrop"
                 />
 
@@ -31,8 +31,11 @@
                 android:id="@+id/txtRoomType"
                 android:text="Room type"
                 android:layout_marginTop="10dp"
-                android:textSize="18sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -40,11 +43,23 @@
                 android:id="@+id/txtDescription"
                 android:textSize="16sp"
                 android:text="Description"
+                android:layout_weight="3"
+                android:textColor="#ffffff"
                 android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book Now"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:layout_weight="2"
+                android:background="#1b6cc2"
+                android:id="@+id/book_now"/>
+
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+
 
 </LinearLayout>

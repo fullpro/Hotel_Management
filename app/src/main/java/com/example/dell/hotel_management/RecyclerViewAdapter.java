@@ -35,8 +35,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
 
+        String strOut;
+
         holder.room_type.setText(mData.get(position).getRoomType());
-        holder.room_desc.setText(mData.get(position).getDescription());
+        if (mData.get(position).getDescription().length() > 30) {
+            strOut = mData.get(position).getDescription().substring(0,20) + "...";
+            holder.room_desc.setText(strOut);
+        }
         holder.img_room_thumbnail.setImageResource(mData.get(position).getThumbnail());
 
         //set click listener
